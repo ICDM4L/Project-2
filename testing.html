@@ -1,0 +1,35 @@
+<html>
+
+    <body>
+        <div><button onclick="handleClick()">Go</button></div>
+        <div id="outputArea"></div>
+        <script>
+            let employees = { data: [
+                {
+                    name: 'Tim Tebow',
+                    address: {
+                        city: 'AUSTIN',
+                        state: 'TX'
+                    }
+                },
+
+                {
+                    name: 'Susan Sims',
+                    address: {
+                        city: 'DALLAS',
+                        state: 'TX'
+                    }
+                }
+            ]}
+
+            function handleClick() {
+                let outputAreaEle = document.getElementById("outputArea");
+                let result = ""
+                for (let i = 0; i < employees.data.length; i++)  
+                    result += "<h2>" + employees.data[i].address.city + "</h2>"
+                outputAreaEle.innerHTML = result; 
+            }
+        </script>
+    </body>
+</html>
+

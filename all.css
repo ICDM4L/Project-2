@@ -1,0 +1,20 @@
+.header {
+    text-align: center;
+}
+
+.grid {
+    border-image: 50px;
+}
+
+
+#posters {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+#posters img {
+    max-height: 200px;
+    max-width: 150px;
+    margin: 2.5px;
+}
