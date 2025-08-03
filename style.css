@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Creepster', cursive;
+    font-weight: 700;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #00bfff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #009acd;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center memes horizontally */
+    gap: 10px; /* space between memes */
+    padding: 10px;
+}
+
+.grid img {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
